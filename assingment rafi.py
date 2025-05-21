@@ -5,7 +5,7 @@ c = int(input("Enter third number: "))
 
 if a >= b and a >= c:
     print("Largest number is:", a)
-elif b >= a and b >= c:
+if b >= a and b >= c:
     print("Largest number is:", b)
 else:
     print("Largest number is:", c)
@@ -19,13 +19,13 @@ y = float(input("Enter y coordinate: "))
 
 if x > 0 and y > 0:
     print("1st Quadrant")
-elif x < 0 and y > 0:
+if x < 0 and y > 0:
     print("2nd Quadrant")
-elif x < 0 and y < 0:
+if x < 0 and y < 0:
     print("3rd Quadrant")
-elif x > 0 and y < 0:
+if x > 0 and y < 0:
     print("4th Quadrant")
-elif x == 0 and y == 0:
+if x == 0 and y == 0:
     print("Origin")
 else:
     print("On Axis")
@@ -39,11 +39,11 @@ age = int(input("Enter your age: "))
 
 if age <= 1:
     print("Infant")
-elif age <= 3:
+if age <= 3:
     print("Toddler")
-elif age <= 12:
+if age <= 12:
     print("Child")
-elif age <= 19:
+if age <= 19:
     print("Teenager")
 else:
     print("Adult")
@@ -63,9 +63,9 @@ print("Your BMI is:", bmi)
 
 if bmi < 18.5:
     print("Underweight")
-elif bmi < 25:
+if bmi < 25:
     print("Normal")
-elif bmi < 30:
+if bmi < 30:
     print("Overweight")
 else:
     print("Obese")
@@ -80,11 +80,11 @@ op = input("Enter operator (+, -, *, /): ")
 
 if op == '+':
     print("Result:", num1 + num2)
-elif op == '-':
+if op == '-':
     print("Result:", num1 - num2)
-elif op == '*':
+if op == '*':
     print("Result:", num1 * num2)
-elif op == '/':
+if op == '/':
     if num2 != 0:
         print("Result:", num1 / num2)
     else:
@@ -100,9 +100,9 @@ else:
 for i in range(1, 101):
     if i % 3 == 0 and i % 5 == 0:
         print("FizzBuzz")
-    elif i % 3 == 0:
+    if i % 3 == 0:
         print("Fizz")
-    elif i % 5 == 0:
+    if i % 5 == 0:
         print("Buzz")
     else:
         print(i)
